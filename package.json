@@ -12,7 +12,7 @@
   ],
   "author": "Raghavendra K R <raghavendra@sodaru.com>",
   "homepage": "https://github.com/sodaru/aws-cognito-srp-client#readme",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "main": "./dist/cjs/index.js",
   "module": "dist/index.js",
   "typings": "dist/index.d.ts",
