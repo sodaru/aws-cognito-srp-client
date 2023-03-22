@@ -29,7 +29,7 @@ const initN =
   "BBE117577A615D6C770988C0BAD946E208E24FA074E5AB31" +
   "43DB5BFCE0FD108E4B82D120A93AD2CAFFFFFFFFFFFFFFFF";
 
-export default class Srp {
+class Srp {
   private readonly g: BigInteger = bigInt("2", 16);
   private readonly N: BigInteger = bigInt(initN, 16);
   private readonly k: BigInteger = bigInt(
@@ -100,6 +100,8 @@ export default class Srp {
     return { timestamp, signature };
   }
 }
+
+export default Srp;
 
 const getNowString = () => {
   const now = new Date();
